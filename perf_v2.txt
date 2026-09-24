@@ -1,0 +1,73 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 67  of event 'cpu_atom/cycles/Pu'
+# Event count (approx.): 14503093
+#
+# Overhead  Command          Shared Object     Symbol                             
+# ........  ...............  ................  ...................................
+#
+    33.38%  mininloganalyze  libc.so.6         [.] __vfscanf_internal
+    16.29%  mininloganalyze  libc.so.6         [.] msort_with_tmp.part.0
+     9.65%  mininloganalyze  libc.so.6         [.] __GI_____strtoll_l_internal
+     6.89%  mininloganalyze  libc.so.6         [.] __memmove_avx_unaligned_erms
+     6.73%  mininloganalyze  libc.so.6         [.] _IO_sputbackc
+     6.39%  mininloganalyze  mininloganalyzer  [.] cmp_long
+     5.10%  mininloganalyze  libc.so.6         [.] __strrchr_avx2
+     3.44%  mininloganalyze  libc.so.6         [.] __memchr_avx2
+     2.53%  mininloganalyze  libc.so.6         [.] _IO_getline_info
+     1.72%  mininloganalyze  libc.so.6         [.] _IO_old_init
+     1.70%  mininloganalyze  libc.so.6         [.] __strlen_avx2
+     1.70%  mininloganalyze  libc.so.6         [.] __GI___libc_cleanup_push_defer
+     1.69%  mininloganalyze  libc.so.6         [.] _IO_str_init_static_internal
+     1.46%  mininloganalyze  libc.so.6         [.] _IO_fgets
+     1.31%  mininloganalyze  libc.so.6         [.] __GI___libc_cleanup_pop_restore
+
+
+# Samples: 2K of event 'cpu_core/cycles/Pu'
+# Event count (approx.): 705314887
+#
+# Overhead  Command          Shared Object         Symbol                             
+# ........  ...............  ....................  ...................................
+#
+    33.13%  mininloganalyze  libc.so.6             [.] msort_with_tmp.part.0
+    20.40%  mininloganalyze  libc.so.6             [.] __vfscanf_internal
+    15.57%  mininloganalyze  mininloganalyzer      [.] cmp_long
+     6.69%  mininloganalyze  libc.so.6             [.] __GI_____strtoll_l_internal
+     4.17%  mininloganalyze  libc.so.6             [.] __memmove_avx_unaligned_erms
+     2.68%  mininloganalyze  libc.so.6             [.] _IO_sputbackc
+     2.09%  mininloganalyze  libc.so.6             [.] __strrchr_avx2
+     2.08%  mininloganalyze  libc.so.6             [.] _IO_fgets
+     1.95%  mininloganalyze  libc.so.6             [.] _IO_getline_info
+     1.68%  mininloganalyze  libc.so.6             [.] _IO_no_init
+     1.63%  mininloganalyze  mininloganalyzer      [.] main
+     1.58%  mininloganalyze  libc.so.6             [.] __isoc23_sscanf
+     1.15%  mininloganalyze  libc.so.6             [.] _IO_str_init_static_internal
+     0.79%  mininloganalyze  libc.so.6             [.] __memchr_avx2
+     0.77%  mininloganalyze  libc.so.6             [.] _IO_setb
+     0.66%  mininloganalyze  libc.so.6             [.] _IO_old_init
+     0.50%  mininloganalyze  libc.so.6             [.] memcpy@@GLIBC_2.14@plt
+     0.45%  mininloganalyze  libc.so.6             [.] __GI___libc_cleanup_push_defer
+     0.39%  mininloganalyze  libc.so.6             [.] __strtoll_internal
+     0.28%  mininloganalyze  libc.so.6             [.] __strlen_avx2
+     0.22%  mininloganalyze  libc.so.6             [.] _IO_getline
+     0.20%  mininloganalyze  libc.so.6             [.] __GI___libc_cleanup_pop_restore
+     0.16%  mininloganalyze  libc.so.6             [.] memchr@plt
+     0.15%  mininloganalyze  mininloganalyzer      [.] strrchr@plt
+     0.13%  mininloganalyze  [unknown]             [k] 0xffffffffae201988
+     0.11%  mininloganalyze  mininloganalyzer      [.] __isoc23_sscanf@plt
+     0.09%  mininloganalyze  libc.so.6             [.] __internal_syscall_cancel
+     0.09%  mininloganalyze  libc.so.6             [.] strlen@plt
+     0.05%  mininloganalyze  [unknown]             [k] 0xffffffffae2001c8
+     0.05%  mininloganalyze  libc.so.6             [.] _IO_file_underflow@@GLIBC_2.2.5
+     0.04%  mininloganalyze  libc.so.6             [.] __uflow
+     0.04%  mininloganalyze  libc.so.6             [.] read
+     0.02%  mininloganalyze  ld-linux-x86-64.so.2  [.] memset
+     0.02%  mininloganalyze  libc.so.6             [.] malloc
+
+
+#
+# (Tip: Treat branches as callchains: perf record -b ... ; perf report --branch-history)
+#
