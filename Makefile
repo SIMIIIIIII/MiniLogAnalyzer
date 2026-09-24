@@ -1,0 +1,3 @@
+clean:
+	rm mininloganalyzer_v0 mininloganalyzer_v1 mininloganalyzer_v1b mininloganalyzer_v2
+	
