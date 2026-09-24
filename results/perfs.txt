@@ -1,4 +1,4 @@
-Mesure             v0        v1     v1b       v2        
-Real Time          0.160733  0.434  0.277264  0.306074  
-IPC                4.72      2.99   4.65      1.79      
-Branche-miss rate  0.19      1.8    0.2       4.83      
+Mesure           v0       v1       v1b       v2        
+Real Time        0.14967  0.39158  0.251923  0.277533  
+IPC              4.74     3.02     4.69      1.81      
+Cache-miss rate  44.00%   16.00%   54.00%    17.00%    
