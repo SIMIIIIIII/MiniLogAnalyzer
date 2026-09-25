@@ -74,7 +74,6 @@ int main(int argc, char *argv[]) {
             if (code >= 0 && code < MAX_CODE) counts[code]++;
             if (n_sizes == capacity) {
                 capacity *= 2;
-                // tableau dynamique : on double
                 long *tmp = realloc(sizes, capacity * sizeof(long));
                 if (tmp == NULL) {
                     fprintf(stderr, "realloc a echoue\n");
@@ -96,10 +95,10 @@ int main(int argc, char *argv[]) {
 
     if (n_sizes > 0) {
         qsort(sizes, n_sizes, sizeof(long), cmp_long);
-
-        // tri necessaire pour median/percentiles
+        
         double sum = 0;
         for (long i = 0; i < n_sizes; i++) sum += sizes[i];
+        
         printf("\nTailles de reponse (n=%ld octets) :\n", n_sizes);
         printf(" min: %ld\n", sizes[0]);
         printf(" max: %ld\n", sizes[n_sizes - 1]);
